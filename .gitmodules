@@ -1,0 +1,3 @@
+[submodule "src/lib/config/profile"]
+	path = src/lib/config/profile
+	url = https://github.com/renetec/renetec.git
