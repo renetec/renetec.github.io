@@ -15,6 +15,15 @@ const config = {
     }),
     paths: {
       base: process.env.NODE_ENV === 'production' ? '' : ''
+    },
+    prerender: {
+      handleHttpError: ({ path, message }) => {
+        // Ignore 404s for routes that don't exist yet
+        if (path.startsWith('/projects') || path.startsWith('/timeline') || path.startsWith('/stats')) {
+          return;
+        }
+        throw new Error(message);
+      }
     }
   }
 };
