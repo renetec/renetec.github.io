@@ -19,16 +19,25 @@
   },
   "projects": {
     "title": "Projets",
+    "subtitle": "Une collection de projets que j'ai construits sur des plateformes web et mobiles",
     "allProjects": "Tous les Projets",
     "filter": "Filtrer",
     "year": "Année",
-    "status": "Statut",
-    "tech": "Technologie",
+    "status": "Statut :",
+    "statusAll": "Tous",
+    "statusLive": "En ligne",
+    "statusArchived": "Archivé",
+    "tech": "Technologie :",
+    "allTech": "Toutes les technologies",
     "features": "Fonctionnalités",
     "links": "Liens",
     "viewLive": "Voir en Direct",
     "viewGithub": "Voir sur GitHub",
-    "lessonsLearned": "Leçons Apprises"
+    "lessonsLearned": "Leçons Apprises",
+    "projectsFound": "{count} projet trouvé",
+    "projectsFoundPlural": "{count} projets trouvés",
+    "noResults": "Aucun projet ne correspond aux filtres sélectionnés.",
+    "clearFilters": "Effacer les filtres"
   },
   "timeline": {
     "title": "Chronologie",

@@ -1,6 +1,7 @@
 <script>
   import { projects } from '$lib/config';
   import ProjectCard from '$lib/components/ProjectCard.svelte';
+  import { _ } from '$lib/i18n';
 
   let statusFilter = 'all';
   let techFilter = 'all';
@@ -40,30 +41,30 @@
 </script>
 
 <svelte:head>
-  <title>Projects - René Tec</title>
-  <meta name="description" content="Portfolio of projects by René Tec - Full-Stack Developer" />
+  <title>{$_('projects.title')} - René Tec</title>
+  <meta name="description" content={$_('projects.subtitle')} />
 </svelte:head>
 
 <div class="projects-page">
   <header class="page-header">
     <h1 class="terminal-prompt">$ ls ~/projects</h1>
-    <p class="subtitle">A collection of projects I've built across web and mobile platforms</p>
+    <p class="subtitle">{$_('projects.subtitle')}</p>
   </header>
 
   <div class="filters">
     <div class="filter-group">
-      <label for="status-filter">Status:</label>
+      <label for="status-filter">{$_('projects.status')}</label>
       <select id="status-filter" bind:value={statusFilter}>
-        <option value="all">All</option>
-        <option value="live">Live</option>
-        <option value="archived">Archived</option>
+        <option value="all">{$_('projects.statusAll')}</option>
+        <option value="live">{$_('projects.statusLive')}</option>
+        <option value="archived">{$_('projects.statusArchived')}</option>
       </select>
     </div>
 
     <div class="filter-group">
-      <label for="tech-filter">Technology:</label>
+      <label for="tech-filter">{$_('projects.tech')}</label>
       <select id="tech-filter" bind:value={techFilter}>
-        <option value="all">All Technologies</option>
+        <option value="all">{$_('projects.allTech')}</option>
         {#each allTech as tech}
           <option value={tech}>{tech}</option>
         {/each}
@@ -71,15 +72,18 @@
     </div>
 
     <div class="results-count">
-      {sortedProjects.length} {sortedProjects.length === 1 ? 'project' : 'projects'} found
+      {sortedProjects.length === 1
+        ? $_('projects.projectsFound').replace('{count}', sortedProjects.length)
+        : $_('projects.projectsFoundPlural').replace('{count}', sortedProjects.length)
+      }
     </div>
   </div>
 
   {#if sortedProjects.length === 0}
     <div class="no-results">
-      <p>No projects match the selected filters.</p>
+      <p>{$_('projects.noResults')}</p>
       <button on:click={() => { statusFilter = 'all'; techFilter = 'all'; }}>
-        Clear Filters
+        {$_('projects.clearFilters')}
       </button>
     </div>
   {:else}

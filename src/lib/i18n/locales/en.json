@@ -19,16 +19,25 @@
   },
   "projects": {
     "title": "Projects",
+    "subtitle": "A collection of projects I've built across web and mobile platforms",
     "allProjects": "All Projects",
     "filter": "Filter",
     "year": "Year",
-    "status": "Status",
-    "tech": "Technology",
+    "status": "Status:",
+    "statusAll": "All",
+    "statusLive": "Live",
+    "statusArchived": "Archived",
+    "tech": "Technology:",
+    "allTech": "All Technologies",
     "features": "Features",
     "links": "Links",
     "viewLive": "View Live",
     "viewGithub": "View on GitHub",
-    "lessonsLearned": "Lessons Learned"
+    "lessonsLearned": "Lessons Learned",
+    "projectsFound": "{count} project found",
+    "projectsFoundPlural": "{count} projects found",
+    "noResults": "No projects match the selected filters.",
+    "clearFilters": "Clear Filters"
   },
   "timeline": {
     "title": "Timeline",
