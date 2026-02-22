@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "timeline": "Timeline",
+    "stats": "Stats"
+  },
+  "home": {
+    "quickNav": "Quick Navigation",
+    "terminalPlaceholder": "Type 'help' for available commands"
+  },
+  "terminal": {
+    "help": "Available commands:",
+    "helpCommands": "whoami - Display profile information\nls projects - List all projects\ncd timeline - View development timeline\ncd stats - View GitHub statistics\nclear - Clear terminal output",
+    "whoami": "Full-stack developer from Québec, Canada",
+    "currentlyLearning": "Currently learning",
+    "techStack": "Tech Stack"
+  },
+  "projects": {
+    "title": "Projects",
+    "allProjects": "All Projects",
+    "filter": "Filter",
+    "year": "Year",
+    "status": "Status",
+    "tech": "Technology",
+    "features": "Features",
+    "links": "Links",
+    "viewLive": "View Live",
+    "viewGithub": "View on GitHub",
+    "lessonsLearned": "Lessons Learned"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "subtitle": "My journey through code and projects",
+    "currentlyLearning": "Currently Learning"
+  },
+  "stats": {
+    "title": "GitHub Stats",
+    "subtitle": "My open source contributions and activity",
+    "loading": "Loading GitHub data...",
+    "repos": "Repositories",
+    "followers": "Followers",
+    "following": "Following",
+    "contributions": "Contributions"
+  }
+}

@@ -1,6 +1,7 @@
 <script>
   import Terminal from '$lib/components/Terminal.svelte';
   import { profile } from '$lib/config';
+  import { _ } from '$lib/i18n';
 </script>
 
 <svelte:head>
@@ -26,19 +27,19 @@
   </div>
 
   <div class="quick-links">
-    <h2>Quick Navigation</h2>
+    <h2>{$_('home.quickNav')}</h2>
     <div class="links-grid">
       <a href="/projects" class="link-card">
         <span class="icon">💼</span>
-        <span class="text">Projects</span>
+        <span class="text">{$_('nav.projects')}</span>
       </a>
       <a href="/timeline" class="link-card">
         <span class="icon">📅</span>
-        <span class="text">Timeline</span>
+        <span class="text">{$_('nav.timeline')}</span>
       </a>
       <a href="/stats" class="link-card">
         <span class="icon">📊</span>
-        <span class="text">Stats</span>
+        <span class="text">{$_('nav.stats')}</span>
       </a>
     </div>
   </div>

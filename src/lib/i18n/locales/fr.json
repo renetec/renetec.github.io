@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "timeline": "Chronologie",
+    "stats": "Statistiques"
+  },
+  "home": {
+    "quickNav": "Navigation Rapide",
+    "terminalPlaceholder": "Tapez 'help' pour les commandes disponibles"
+  },
+  "terminal": {
+    "help": "Commandes disponibles:",
+    "helpCommands": "whoami - Afficher les informations de profil\nls projects - Lister tous les projets\ncd timeline - Voir la chronologie de développement\ncd stats - Voir les statistiques GitHub\nclear - Effacer la sortie du terminal",
+    "whoami": "Développeur full-stack de Québec, Canada",
+    "currentlyLearning": "Actuellement en apprentissage",
+    "techStack": "Stack Technique"
+  },
+  "projects": {
+    "title": "Projets",
+    "allProjects": "Tous les Projets",
+    "filter": "Filtrer",
+    "year": "Année",
+    "status": "Statut",
+    "tech": "Technologie",
+    "features": "Fonctionnalités",
+    "links": "Liens",
+    "viewLive": "Voir en Direct",
+    "viewGithub": "Voir sur GitHub",
+    "lessonsLearned": "Leçons Apprises"
+  },
+  "timeline": {
+    "title": "Chronologie",
+    "subtitle": "Mon parcours à travers le code et les projets",
+    "currentlyLearning": "Actuellement en Apprentissage"
+  },
+  "stats": {
+    "title": "Statistiques GitHub",
+    "subtitle": "Mes contributions et activités open source",
+    "loading": "Chargement des données GitHub...",
+    "repos": "Dépôts",
+    "followers": "Abonnés",
+    "following": "Abonnements",
+    "contributions": "Contributions"
+  }
+}
