@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>{profile.name} - {profile.role}</title>
+  <title>{profile.name} - {profile.tagline}</title>
   <meta name="description" content="{profile.bio}" />
 </svelte:head>
 
@@ -18,7 +18,7 @@
  ██║  ██║███████╗██║ ╚████║███████╗
  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝
     `}</pre>
-    <p class="tagline">{profile.role} • {profile.location}</p>
+    <p class="tagline">{profile.tagline} • {profile.location}</p>
   </div>
 
   <div class="terminal-wrapper">
