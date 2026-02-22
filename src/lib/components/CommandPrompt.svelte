@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
+  import { _ } from '$lib/i18n';
 
   export let value = '';
 
@@ -32,7 +33,7 @@
     on:keydown={handleKeydown}
     type="text"
     class="command-input"
-    placeholder="Type 'help' for available commands"
+    placeholder={$_('home.terminalPlaceholder')}
     autocomplete="off"
     autocorrect="off"
     autocapitalize="off"

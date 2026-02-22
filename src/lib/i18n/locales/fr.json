@@ -9,11 +9,13 @@
     "terminalPlaceholder": "Tapez 'help' pour les commandes disponibles"
   },
   "terminal": {
-    "help": "Commandes disponibles:",
-    "helpCommands": "whoami - Afficher les informations de profil\nls projects - Lister tous les projets\ncd timeline - Voir la chronologie de développement\ncd stats - Voir les statistiques GitHub\nclear - Effacer la sortie du terminal",
-    "whoami": "Développeur full-stack de Québec, Canada",
-    "currentlyLearning": "Actuellement en apprentissage",
-    "techStack": "Stack Technique"
+    "welcome": "Bienvenue sur mon portfolio ! Tapez <span class=\"command-help\">help</span> pour voir les commandes disponibles.",
+    "availableCommands": "Commandes disponibles :",
+    "helpText": "<span class=\"command-help\">help</span>      - Afficher ce message d'aide\n  <span class=\"command-help\">whoami</span>    - Afficher des informations sur moi\n  <span class=\"command-help\">ls</span>        - Lister les sections disponibles\n  <span class=\"command-help\">clear</span>     - Effacer le terminal\n  <span class=\"command-help\">projects</span>  - Afficher mes projets\n  <span class=\"command-help\">contact</span>   - Afficher les informations de contact\n\nTapez une commande pour commencer !",
+    "commandNotFound": "Commande introuvable : {command}. Tapez 'help' pour les commandes disponibles.",
+    "featuredProjects": "Projets en vedette :",
+    "contactInfo": "Informations de contact :",
+    "feelFreeToReach": "N'hésitez pas à me contacter !"
   },
   "projects": {
     "title": "Projets",

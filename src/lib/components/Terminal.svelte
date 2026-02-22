@@ -3,6 +3,7 @@
   import Output from './Output.svelte';
   import CommandPrompt from './CommandPrompt.svelte';
   import { profile, projects } from '$lib/config';
+  import { _ } from '$lib/i18n';
 
   let outputLines = [];
   let commandHistory = [];
@@ -11,15 +12,7 @@
 
   const commands = {
     help: () => {
-      return `Available commands:
-  <span class="command-help">help</span>      - Show this help message
-  <span class="command-help">whoami</span>    - Display information about me
-  <span class="command-help">ls</span>        - List available sections
-  <span class="command-help">clear</span>     - Clear the terminal
-  <span class="command-help">projects</span>  - Show my projects
-  <span class="command-help">contact</span>   - Display contact information
-
-Type any command to get started!`;
+      return $_('terminal.helpText');
     },
 
     whoami: () => {
@@ -50,21 +43,20 @@ Email: ${profile.email}`;
    ${p.tagline}
    Tech: ${tech}
    ${p.links.github ? `GitHub: ${p.links.github}` : ''}
-   ${p.links.demo ? `Demo: ${p.links.demo}` : ''}`;
+   ${p.links.live ? `Demo: ${p.links.live}` : ''}`;
         })
         .join('\n\n');
 
-      return `<strong>Featured Projects:</strong>\n\n${projectList}`;
+      return `<strong>${$_('terminal.featuredProjects')}</strong>\n\n${projectList}`;
     },
 
     contact: () => {
-      return `<strong>Contact Information:</strong>
+      return `<strong>${$_('terminal.contactInfo')}</strong>
 
-Email: ${profile.email}
-GitHub: github.com/${profile.github}
+GitHub: github.com/${profile.username}
 Location: ${profile.location}
 
-Feel free to reach out!`;
+${$_('terminal.feelFreeToReach')}`;
     },
 
     clear: () => {
@@ -100,9 +92,10 @@ Feel free to reach out!`;
         ];
       }
     } else {
+      const errorMsg = $_('terminal.commandNotFound').replace('{command}', command);
       outputLines = [
         ...outputLines,
-        { type: 'error', text: `Command not found: ${command}. Type 'help' for available commands.` }
+        { type: 'error', text: errorMsg }
       ];
     }
 
@@ -139,7 +132,7 @@ Feel free to reach out!`;
     outputLines = [
       {
         type: 'output',
-        text: `Welcome to my portfolio! Type <span class="command-help">help</span> to see available commands.`
+        text: $_('terminal.welcome')
       }
     ];
   });
