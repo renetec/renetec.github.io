@@ -1,36 +1,42 @@
 <script>
   import TechBadge from './TechBadge.svelte';
+  import { localize } from '$lib/utils/localize';
+  import { _, locale } from '$lib/i18n';
 
   export let project;
 
-  const statusLabel = {
-    live: 'Live',
-    development: 'In Development',
-    archived: 'Archived'
+  // Localized status labels
+  $: statusLabel = {
+    live: $locale === 'fr' ? 'En ligne' : 'Live',
+    development: $locale === 'fr' ? 'En développement' : 'In Development',
+    archived: $locale === 'fr' ? 'Archivé' : 'Archived'
   };
 
   // Determine status from project data
-  $: status = project.links?.demo ? 'live' : 'archived';
+  $: status = project.status || (project.links?.demo || project.links?.live ? 'live' : 'archived');
 </script>
 
 <a href="/projects/{project.id}" class="project-card">
   <div class="card-header">
     <div class="title-row">
       <h3>{project.name}</h3>
-      <span class="status status-{status}">{statusLabel[status] || 'Archived'}</span>
+      <span class="status status-{status}">{statusLabel[status]}</span>
     </div>
-    <p class="tagline">{project.tagline}</p>
+    <p class="tagline">{localize(project.tagline)}</p>
   </div>
 
   <div class="card-body">
-    <p class="description">{project.description}</p>
+    <p class="description">{localize(project.description)}</p>
 
-    {#if project.highlights && project.highlights.length > 0}
-      <ul class="highlights">
-        {#each project.highlights.slice(0, 2) as highlight}
-          <li>{highlight}</li>
-        {/each}
-      </ul>
+    {#if project.features}
+      {@const localizedFeatures = typeof project.features === 'object' && !Array.isArray(project.features) ? (project.features[$locale] || project.features.en || []) : project.features}
+      {#if localizedFeatures.length > 0}
+        <ul class="highlights">
+          {#each localizedFeatures.slice(0, 2) as feature}
+            <li>{feature}</li>
+          {/each}
+        </ul>
+      {/if}
     {/if}
   </div>
 

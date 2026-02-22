@@ -2,11 +2,12 @@
   import Terminal from '$lib/components/Terminal.svelte';
   import { profile } from '$lib/config';
   import { _ } from '$lib/i18n';
+  import { localize } from '$lib/utils/localize';
 </script>
 
 <svelte:head>
-  <title>{profile.name} - {profile.tagline}</title>
-  <meta name="description" content="{profile.bio}" />
+  <title>{profile.name} - {localize(profile.tagline)}</title>
+  <meta name="description" content="{localize(profile.bio)}" />
 </svelte:head>
 
 <div class="container">
@@ -19,7 +20,7 @@
  ██║  ██║███████╗██║ ╚████║███████╗
  ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝
     `}</pre>
-    <p class="tagline">{profile.tagline} • {profile.location}</p>
+    <p class="tagline">{localize(profile.tagline)} • {profile.location}</p>
   </div>
 
   <div class="terminal-wrapper">

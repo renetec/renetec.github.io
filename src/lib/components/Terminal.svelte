@@ -3,7 +3,8 @@
   import Output from './Output.svelte';
   import CommandPrompt from './CommandPrompt.svelte';
   import { profile, projects } from '$lib/config';
-  import { _ } from '$lib/i18n';
+  import { _, locale } from '$lib/i18n';
+  import { localize } from '$lib/utils/localize';
 
   let outputLines = [];
   let commandHistory = [];
@@ -17,13 +18,12 @@
 
     whoami: () => {
       return `<strong>${profile.name}</strong>
-${profile.role}
+${localize(profile.tagline)}
 ${profile.location}
 
-${profile.bio}
+${localize(profile.bio)}
 
-GitHub: github.com/${profile.github}
-Email: ${profile.email}`;
+GitHub: github.com/${profile.username}`;
     },
 
     ls: () => {
@@ -40,7 +40,7 @@ Email: ${profile.email}`;
         .map((p, i) => {
           const tech = p.tech.join(', ');
           return `${i + 1}. <strong>${p.name}</strong> (${p.year})
-   ${p.tagline}
+   ${localize(p.tagline)}
    Tech: ${tech}
    ${p.links.github ? `GitHub: ${p.links.github}` : ''}
    ${p.links.live ? `Demo: ${p.links.live}` : ''}`;
