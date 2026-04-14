@@ -115,6 +115,11 @@
 </div>
 
 <style>
+  @keyframes windowOpen {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
   .window {
     display: flex;
     flex-direction: column;
@@ -124,6 +129,7 @@
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.2s ease;
+    animation: windowOpen 0.2s ease-out;
   }
 
   .window:hover {
