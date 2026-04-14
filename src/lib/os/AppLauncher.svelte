@@ -9,7 +9,6 @@
     { id: 'projects', icon: '💼', labelKey: 'os.projects', descKey: 'os.projectsDesc' },
     { id: 'about', icon: '👤', labelKey: 'os.about', descKey: 'os.aboutDesc' },
     { id: 'terminal', icon: '💻', labelKey: 'os.terminal', descKey: 'os.terminalDesc' },
-    { id: 'mail', icon: '✉️', labelKey: 'os.mail', descKey: 'os.mailDesc' },
     { id: 'settings', icon: '⚙️', labelKey: 'os.settings', descKey: 'os.settingsDesc' }
   ];
 
