@@ -15,7 +15,11 @@
     "commandNotFound": "Commande introuvable : {command}. Tapez 'help' pour les commandes disponibles.",
     "featuredProjects": "Projets en vedette :",
     "contactInfo": "Informations de contact :",
-    "feelFreeToReach": "N'hésitez pas à me contacter !"
+    "feelFreeToReach": "N'hésitez pas à me contacter !",
+    "services": "Services",
+    "neofetch": "Infos système",
+    "sudoHireMe": "Accès accordé. Ouverture du canal de communication sécurisé...",
+    "openingMail": "Ouverture de l'application Courriel..."
   },
   "projects": {
     "all": "Tous",

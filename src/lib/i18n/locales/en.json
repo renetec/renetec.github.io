@@ -15,7 +15,11 @@
     "commandNotFound": "Command not found: {command}. Type 'help' for available commands.",
     "featuredProjects": "Featured Projects:",
     "contactInfo": "Contact Information:",
-    "feelFreeToReach": "Feel free to reach out!"
+    "feelFreeToReach": "Feel free to reach out!",
+    "services": "Services",
+    "neofetch": "System info",
+    "sudoHireMe": "Access granted. Opening secure communication channel...",
+    "openingMail": "Opening Mail app..."
   },
   "projects": {
     "all": "All",
