@@ -1,0 +1,54 @@
+[
+  {
+    "id": "insurance-platform",
+    "icon": "🛡️",
+    "category": "saas",
+    "title": { "en": "Insurance Management Platform", "fr": "Plateforme de gestion d'assurance" },
+    "description": {
+      "en": "Full-stack business management platform for insurance operations. Policy management, claims processing, client portal, and reporting dashboards.",
+      "fr": "Plateforme de gestion complète pour les opérations d'assurance. Gestion des polices, traitement des réclamations, portail client et tableaux de bord."
+    },
+    "techStack": ["SvelteKit", "PostgreSQL", "Docker", "Node.js"],
+    "screenshots": ["insurance-1.webp", "insurance-2.webp", "insurance-3.webp"],
+    "featured": true
+  },
+  {
+    "id": "union-explorer",
+    "icon": "⚖️",
+    "category": "ai",
+    "title": { "en": "Union Agreement Explorer", "fr": "Explorateur de conventions collectives" },
+    "description": {
+      "en": "AI-powered search across Quebec union collective agreements. Natural language queries with RAG pipeline and semantic embeddings.",
+      "fr": "Recherche intelligente dans les conventions collectives syndicales du Québec. Requêtes en langage naturel avec pipeline RAG et embeddings sémantiques."
+    },
+    "techStack": ["SvelteKit", "AnythingLLM", "RAG", "MiniLM"],
+    "screenshots": ["union-1.webp", "union-2.webp", "union-3.webp"],
+    "featured": true
+  },
+  {
+    "id": "electoqc",
+    "icon": "🗳️",
+    "category": "data",
+    "title": { "en": "ElectoQC — Political Intelligence", "fr": "ElectoQC — Intelligence politique" },
+    "description": {
+      "en": "Open-source political intelligence platform for Quebec. Election data, demographics, school taxes, daycare stats, and political donations visualized on interactive maps.",
+      "fr": "Plateforme d'intelligence géopolitique open source pour le Québec. Données électorales, démographie, taxes scolaires, garderies et dons politiques sur cartes interactives."
+    },
+    "techStack": ["SvelteKit", "PostgreSQL", "Leaflet", "D3.js"],
+    "screenshots": ["electoqc-1.webp", "electoqc-2.webp", "electoqc-3.webp"],
+    "featured": true
+  },
+  {
+    "id": "wordpress-plugins",
+    "icon": "🔌",
+    "category": "wordpress",
+    "title": { "en": "WordPress Custom Plugins", "fr": "Extensions WordPress sur mesure" },
+    "description": {
+      "en": "Custom WordPress plugin development for SMB clients. Event management, membership systems, custom post types, and API integrations.",
+      "fr": "Développement d'extensions WordPress sur mesure pour PME. Gestion d'événements, systèmes de membres, types de contenu personnalisés et intégrations API."
+    },
+    "techStack": ["PHP", "WordPress", "MySQL", "REST API"],
+    "screenshots": ["wp-1.webp", "wp-2.webp", "wp-3.webp"],
+    "featured": true
+  }
+]
