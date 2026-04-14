@@ -20,6 +20,18 @@
   --warning: #ffff00;
   --info: #00ffff;
 
+  /* Terminal variable aliases (used by components) */
+  --terminal-bg: var(--bg-secondary);
+  --terminal-header-bg: var(--bg-tertiary);
+  --terminal-text: var(--text-primary);
+  --terminal-comment: var(--text-muted);
+  --terminal-keyword: var(--accent);
+  --terminal-string: var(--info);
+  --terminal-function: var(--warning);
+  --terminal-border: var(--border-color);
+  --terminal-prompt: var(--accent);
+  --terminal-error: var(--error);
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
