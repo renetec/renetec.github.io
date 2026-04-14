@@ -52,5 +52,19 @@
     "followers": "Abonnés",
     "following": "Abonnements",
     "contributions": "Contributions"
+  },
+  "os": {
+    "projects": "Projets",
+    "projectsDesc": "Parcourir mes réalisations",
+    "about": "À propos",
+    "aboutDesc": "Qui je suis",
+    "terminal": "Terminal",
+    "terminalDesc": "Interface en ligne de commande",
+    "mail": "Courriel",
+    "mailDesc": "Me contacter",
+    "settings": "Paramètres",
+    "settingsDesc": "Préférences",
+    "tagline": "Développement logiciel sur mesure",
+    "metaDescription": "ReneTec — Développement logiciel sur mesure pour assurance, plateformes de données, intégration IA et WordPress. Basé au Québec."
   }
 }

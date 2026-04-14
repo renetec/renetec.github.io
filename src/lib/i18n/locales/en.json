@@ -52,5 +52,19 @@
     "followers": "Followers",
     "following": "Following",
     "contributions": "Contributions"
+  },
+  "os": {
+    "projects": "Projects",
+    "projectsDesc": "Browse my work",
+    "about": "About",
+    "aboutDesc": "Who I am",
+    "terminal": "Terminal",
+    "terminalDesc": "Command line interface",
+    "mail": "Mail",
+    "mailDesc": "Get in touch",
+    "settings": "Settings",
+    "settingsDesc": "Preferences",
+    "tagline": "Custom Software Development",
+    "metaDescription": "ReneTec — Custom software development for insurance, data platforms, AI integration, and WordPress. Based in Quebec."
   }
 }
