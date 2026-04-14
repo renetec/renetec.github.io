@@ -53,6 +53,38 @@
   --transition-slow: 300ms ease;
 }
 
+[data-theme="light"] {
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e8eaed;
+
+  --text-primary: #1a1a2e;
+  --text-secondary: #333355;
+  --text-muted: #666688;
+
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+
+  --border-color: #d1d5db;
+  --border-accent: #3b82f6;
+
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --info: #06b6d4;
+
+  /* Terminal aliases for light */
+  --terminal-bg: var(--bg-secondary);
+  --terminal-header-bg: var(--bg-tertiary);
+  --terminal-text: var(--text-primary);
+  --terminal-comment: var(--text-muted);
+  --terminal-keyword: var(--accent);
+  --terminal-string: var(--info);
+  --terminal-function: var(--warning);
+  --terminal-border: var(--border-color);
+  --terminal-prompt: var(--accent);
+  --terminal-error: var(--error);
+}
+
 /* Global Resets */
 *,
 *::before,
