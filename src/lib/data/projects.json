@@ -39,16 +39,16 @@
     "featured": true
   },
   {
-    "id": "wordpress-plugins",
-    "icon": "🔌",
-    "category": "wordpress",
-    "title": { "en": "WordPress Custom Plugins", "fr": "Extensions WordPress sur mesure" },
+    "id": "client-websites",
+    "icon": "🌐",
+    "category": "websites",
+    "title": { "en": "Client Websites", "fr": "Sites web clients" },
     "description": {
-      "en": "Custom WordPress plugin development for SMB clients. Event management, membership systems, custom post types, and API integrations.",
-      "fr": "Développement d'extensions WordPress sur mesure pour PME. Gestion d'événements, systèmes de membres, types de contenu personnalisés et intégrations API."
+      "en": "Custom websites for local businesses and organizations. Community portals, business sites, professional services, and civic tools — each tailored to the client's needs.",
+      "fr": "Sites web sur mesure pour entreprises et organismes locaux. Portails communautaires, sites d'affaires, services professionnels et outils civiques — chacun adapté aux besoins du client."
     },
-    "techStack": ["PHP", "WordPress", "MySQL", "REST API"],
-    "screenshots": ["wp-1.webp", "wp-2.webp", "wp-3.webp"],
+    "techStack": ["WordPress", "SvelteKit", "HTML/CSS", "Coolify"],
+    "screenshots": ["web-cdstpacome.png", "web-romanpolicier.png", "web-friperie.png", "web-centreaffaires.png", "web-helene.png", "web-chezmoi.png", "web-cheznous.png", "web-iatech.png"],
     "featured": true
   }
 ]

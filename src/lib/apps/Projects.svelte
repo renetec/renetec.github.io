@@ -11,7 +11,7 @@
     { id: 'saas', labelKey: 'projects.saas' },
     { id: 'ai', labelKey: 'projects.ai' },
     { id: 'data', labelKey: 'projects.data' },
-    { id: 'wordpress', labelKey: 'projects.wordpress' }
+    { id: 'websites', labelKey: 'projects.websites' }
   ];
 
   let filtered = $derived(
