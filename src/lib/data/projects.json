@@ -22,7 +22,7 @@
       "fr": "Recherche intelligente dans les conventions collectives syndicales du Québec. Requêtes en langage naturel avec pipeline RAG et embeddings sémantiques."
     },
     "techStack": ["SvelteKit", "AnythingLLM", "RAG", "MiniLM"],
-    "screenshots": ["union-1.webp", "union-2.webp", "union-3.webp"],
+    "screenshots": ["union-convention.png", "union-map.png", "union-association.png", "union-juri.png"],
     "featured": true
   },
   {
