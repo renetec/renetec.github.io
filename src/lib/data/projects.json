@@ -9,7 +9,7 @@
       "fr": "Plateforme de gestion complète pour les opérations d'assurance. Gestion des polices, traitement des réclamations, portail client et tableaux de bord."
     },
     "techStack": ["SvelteKit", "PostgreSQL", "Docker", "Node.js"],
-    "screenshots": ["insurance-1.webp", "insurance-2.webp", "insurance-3.webp"],
+    "screenshots": ["pmx-dashboard.png", "pmx-dossiers.png", "pmx-dossier-detail.png", "pmx-gl.png"],
     "featured": true
   },
   {
