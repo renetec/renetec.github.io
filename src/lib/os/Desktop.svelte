@@ -11,7 +11,7 @@
     { id: 'settings', icon: '⚙️', labelKey: 'os.settings' }
   ];
 
-  function handleDblClick(app) {
+  function handleClick(app) {
     playClick();
     openWindow(app.id, $_(app.labelKey));
   }
@@ -20,7 +20,7 @@
 <div class="desktop">
   <div class="icons">
     {#each apps as app}
-      <button class="icon" ondblclick={() => handleDblClick(app)}>
+      <button class="icon" onclick={() => handleClick(app)}>
         <span class="icon-emoji">{app.icon}</span>
         <span class="icon-label">{$_(app.labelKey)}</span>
       </button>

@@ -9,8 +9,12 @@ let enabled = $state(
 let audioContext = null;
 
 function getContext() {
-  if (!audioContext && typeof window !== 'undefined') {
-    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  try {
+    if (!audioContext && typeof window !== 'undefined') {
+      audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    }
+  } catch (e) {
+    return null;
   }
   return audioContext;
 }

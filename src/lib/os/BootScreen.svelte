@@ -18,7 +18,7 @@
       scale = 1;
     });
 
-    playBoot();
+    try { playBoot(); } catch (e) { /* AudioContext may need user gesture */ }
 
     setTimeout(() => {
       opacity = 0;
