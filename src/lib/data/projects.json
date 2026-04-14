@@ -35,7 +35,7 @@
       "fr": "Plateforme d'intelligence géopolitique open source pour le Québec. Données électorales, démographie, taxes scolaires, garderies et dons politiques sur cartes interactives."
     },
     "techStack": ["SvelteKit", "PostgreSQL", "Leaflet", "D3.js"],
-    "screenshots": ["electoqc-1.webp", "electoqc-2.webp", "electoqc-3.webp"],
+    "screenshots": ["electoqc-map.png", "electoqc-resultats.png", "electoqc-demographie.png", "electoqc-donations.png"],
     "featured": true
   },
   {
