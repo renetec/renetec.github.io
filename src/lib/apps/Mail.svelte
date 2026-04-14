@@ -498,4 +498,30 @@
   .compose-btn-inline:hover {
     background: var(--accent-hover, #3451d1);
   }
+
+  @media (max-width: 768px) {
+    .mail-app {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      min-width: 0;
+      max-height: 160px;
+      border-right: none;
+      border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    }
+
+    .compose-view {
+      padding: 16px;
+    }
+
+    .from-row {
+      flex-direction: column;
+    }
+
+    .item-view {
+      padding: 16px;
+    }
+  }
 </style>

@@ -281,4 +281,16 @@
     border-color: var(--accent-primary, #4361ee);
     outline: 2px solid rgba(67, 97, 238, 0.4);
   }
+
+  @media (max-width: 768px) {
+    .settings-app {
+      padding: 16px;
+    }
+
+    .setting-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
 </style>

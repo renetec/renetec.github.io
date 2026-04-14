@@ -167,6 +167,19 @@
     .stack-grid {
       grid-template-columns: 1fr;
     }
+
+    .about-content {
+      padding: 20px 16px;
+    }
+
+    .about-header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 22px;
+    }
   }
 
   .stack-group {

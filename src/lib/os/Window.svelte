@@ -37,6 +37,31 @@
     window.removeEventListener('mouseup', onDragEnd);
   }
 
+  // Touch support for drag (no-op on mobile since windows are fullscreen)
+  function onTitleTouchStart(e) {
+    if (win.state === 'maximized') return;
+    const touch = e.touches[0];
+    dragging = true;
+    dragOffset = { x: touch.clientX - win.position.x, y: touch.clientY - win.position.y };
+    focusWindow(win.id);
+    playClick();
+    window.addEventListener('touchmove', onTouchDragMove, { passive: false });
+    window.addEventListener('touchend', onTouchDragEnd);
+  }
+
+  function onTouchDragMove(e) {
+    if (!dragging) return;
+    e.preventDefault();
+    const touch = e.touches[0];
+    moveWindow(win.id, touch.clientX - dragOffset.x, touch.clientY - dragOffset.y);
+  }
+
+  function onTouchDragEnd() {
+    dragging = false;
+    window.removeEventListener('touchmove', onTouchDragMove);
+    window.removeEventListener('touchend', onTouchDragEnd);
+  }
+
   function onResizeMouseDown(e) {
     if (win.state === 'maximized') return;
     e.stopPropagation();
@@ -95,7 +120,7 @@
   onmousedown={handleFocus}
 >
   <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="title-bar" onmousedown={onTitleMouseDown}>
+  <div class="title-bar" onmousedown={onTitleMouseDown} ontouchstart={onTitleTouchStart}>
     <div class="window-controls">
       <button class="control close" onclick={handleClose} aria-label="Close"></button>
       <button class="control minimize" onclick={handleMinimize} aria-label="Minimize"></button>
