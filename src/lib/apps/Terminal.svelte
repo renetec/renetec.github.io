@@ -22,6 +22,10 @@
     return $locale === 'fr' ? fr : en;
   }
 
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
   // ── Command implementations ────────────────────────────────────
   function cmdHelp() {
     return t(
@@ -190,8 +194,8 @@ Lieu :     Québec, Canada
       result = cmdSudoHireMe();
     } else {
       result = t(
-        `Command not found: <span class="err">${trimmed}</span>. Type <span class="cmd">help</span> for available commands.`,
-        `Commande introuvable : <span class="err">${trimmed}</span>. Tapez <span class="cmd">help</span> pour les commandes disponibles.`
+        `Command not found: <span class="err">${escapeHtml(trimmed)}</span>. Type <span class="cmd">help</span> for available commands.`,
+        `Commande introuvable : <span class="err">${escapeHtml(trimmed)}</span>. Tapez <span class="cmd">help</span> pour les commandes disponibles.`
       );
       outputLines = [...outputLines, { type: 'error', text: result }];
       return;
