@@ -64,7 +64,7 @@
   .slideshow { position: relative; width: 100%; height: 250px; background: var(--bg-tertiary); overflow: hidden; }
   .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s ease; }
   .slide.active { opacity: 1; }
-  .slide img { width: 100%; height: 100%; object-fit: cover; }
+  .slide img { width: 100%; height: 100%; object-fit: contain; }
   .placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--text-muted); font-family: system-ui, -apple-system, sans-serif; font-size: 0.85rem; }
   .placeholder span:first-child { font-size: 3rem; }
   .slide-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; }
