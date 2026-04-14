@@ -42,6 +42,44 @@
     "following": "Following",
     "contributions": "Contributions"
   },
+  "mail": {
+    "compose": "Compose",
+    "to": "To",
+    "from": "From",
+    "name": "Your name",
+    "email": "Your email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sent": "Message sent!",
+    "inbox": "Inbox",
+    "welcome": "Welcome to ReneTec OS",
+    "welcomeBody": "Thanks for visiting my portfolio. Feel free to explore the projects, browse the timeline, or send me a message using the Compose button.",
+    "gettingStarted": "Getting Started",
+    "gettingStartedBody": "Use the desktop icons to open apps, or type commands in the Terminal. Try typing 'help' to see what's available."
+  },
+  "about": {
+    "title": "René",
+    "tagline": "Custom Software Development",
+    "location": "Saint-Pacôme, Québec",
+    "bio": "With 30+ years of experience in computing — from writing code on MS-DOS to building AI-powered platforms — I design and build custom software solutions for businesses. Whether it's a SaaS platform, a data pipeline, an AI integration, or a WordPress site, I focus on practical solutions that actually work for the people who use them.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infrastructure",
+    "ai": "AI",
+    "localServices": "For local IT services, visit"
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "dark": "Dark",
+    "light": "Light",
+    "language": "Language",
+    "sound": "Sound",
+    "soundOn": "On",
+    "soundOff": "Off",
+    "wallpaper": "Wallpaper"
+  },
   "os": {
     "projects": "Projects",
     "projectsDesc": "Browse my work",

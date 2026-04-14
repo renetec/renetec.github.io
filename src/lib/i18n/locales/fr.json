@@ -42,6 +42,44 @@
     "following": "Abonnements",
     "contributions": "Contributions"
   },
+  "mail": {
+    "compose": "Nouveau message",
+    "to": "À",
+    "from": "De",
+    "name": "Votre nom",
+    "email": "Votre courriel",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer",
+    "sent": "Message envoyé !",
+    "inbox": "Boîte de réception",
+    "welcome": "Bienvenue sur ReneTec OS",
+    "welcomeBody": "Merci de visiter mon portfolio. N'hésitez pas à explorer les projets, parcourir la chronologie ou m'envoyer un message via le bouton Nouveau message.",
+    "gettingStarted": "Pour commencer",
+    "gettingStartedBody": "Utilisez les icônes du bureau pour ouvrir des applications, ou tapez des commandes dans le Terminal. Essayez 'help' pour voir les commandes disponibles."
+  },
+  "about": {
+    "title": "René",
+    "tagline": "Développement logiciel sur mesure",
+    "location": "Saint-Pacôme, Québec",
+    "bio": "Avec plus de 30 ans d'expérience en informatique — des premières lignes de code sous MS-DOS jusqu'aux plateformes propulsées par l'IA — je conçois et développe des logiciels sur mesure pour les entreprises. Qu'il s'agisse d'une plateforme SaaS, d'un pipeline de données, d'une intégration IA ou d'un site WordPress, je mise sur des solutions concrètes qui fonctionnent vraiment pour ceux qui les utilisent.",
+    "frontend": "Interface",
+    "backend": "Serveur",
+    "infrastructure": "Infrastructure",
+    "ai": "IA",
+    "localServices": "Pour des services TI locaux, visitez"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "appearance": "Apparence",
+    "dark": "Sombre",
+    "light": "Clair",
+    "language": "Langue",
+    "sound": "Son",
+    "soundOn": "Activé",
+    "soundOff": "Désactivé",
+    "wallpaper": "Fond d'écran"
+  },
   "os": {
     "projects": "Projets",
     "projectsDesc": "Parcourir mes réalisations",
